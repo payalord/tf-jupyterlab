@@ -1,6 +1,6 @@
 # Tensorflow JupyterLab
 
-This repo is a docker compose setup of Tensorflow with JupyterLab
+This repo is a docker compose setup of Tensorflow with JupyterLab. Tensorflow has been built with https://github.com/payalord/tf-docker and this project uses already compiled `*.whl` files from `tf-docker` project repo release. But in case if you'll need to compile TF yourself, please check `tf-docker` repo for more details.
 
 ## What's in the box?
 
@@ -30,5 +30,5 @@ You can run docker compose command to build or re-build image: `docker compose b
 
 ## JupyterLab
 
-After container is started, you will see a URL link in the console: `http://127.0.0.1:8888/lab?token=c8de56fa...`
+After container is started, you will see a URL link in the console: `http://127.0.0.1:8888/lab`
 This is the link you need to navigate to, in your browser, to start your work with JupyterLab.
