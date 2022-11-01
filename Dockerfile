@@ -11,7 +11,6 @@ RUN pip install -U \
     matplotlib \
     pandas \
     sklearn \
-    nodejs \
     jupyterlab
 RUN apt-get install -y pandoc
 RUN apt-get install -y \
@@ -19,4 +18,4 @@ RUN apt-get install -y \
     texlive-fonts-recommended \
     texlive-plain-generic
 RUN apt-get clean
-CMD jupyter-lab --notebook-dir=/jupyterlab --ip=0.0.0.0 --no-browser --allow-root
+CMD jupyter-lab --notebook-dir=/jupyterlab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
