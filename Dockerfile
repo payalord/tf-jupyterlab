@@ -2,7 +2,7 @@ ARG UBUNTU_VERSION=latest
 FROM ubuntu:${UBUNTU_VERSION} AS tf-install
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install -y python3 python3-pip
+RUN apt-get install -y python3 python3-pip nodejs
 # Install tensorflow v2.11.0-rc1 and tensorflow-addons v0.18.0
 RUN pip install -U https://github.com/payalord/tf-docker/releases/download/v1.0.0/tensorflow-2.11.0rc1-cp310-cp310-linux_x86_64.whl
 RUN pip install -U https://github.com/payalord/tf-docker/releases/download/v1.0.0/tensorflow_addons-0.18.0-cp310-cp310-linux_x86_64.whl
