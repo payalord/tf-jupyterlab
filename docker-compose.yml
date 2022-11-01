@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  tf-jupyterlab:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: tf-jupyterlab
+    image: tf-jupyterlab:r2.11
+    restart: always
+    volumes:
+      - ./jupyterlab:/jupyterlab
+    ports:
+      - 8888:8888
